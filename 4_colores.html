@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4_colores</title>
+    <style>
+      #key1 {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: left;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    "
+  >
+    <div
+      class="box-container"
+      style="
+        display: flex;
+        flex-direction: column;
+        background-color: gainsboro;
+        padding: 1rem;
+      "
+    >
+      <h2>Clic en 4 primeros cuadrados, se cambia el color a negro</h2>
+      <div style="display: flex">
+        <div
+          id="a"
+          class="box"
+          style="width: 200px; height: 200px; background-color: blue"
+        ></div>
+        <div
+          id="b"
+          class="box"
+          style="width: 200px; height: 200px; background-color: red"
+        ></div>
+        <div
+          id="c"
+          class="box"
+          style="width: 200px; height: 200px; background-color: green"
+        ></div>
+        <div
+          id="d"
+          class="box"
+          style="width: 200px; height: 200px; background-color: yellow"
+        ></div>
+      </div>
+    </div>
+    <!-- Segunda parte, cambio color div -->
+    <div
+      class="box-container"
+      style="
+        display: flex;
+        flex-direction: column;
+        background-color: gainsboro;
+        padding: 1rem;
+      "
+    >
+      <h2>Al presionar a, s, d: <span id="firstColorChange"></span></h2>
+      <div
+        id="key"
+        class="box"
+        style="
+          width: 200px;
+          height: 200px;
+          background-color: white;
+          border: 1px solid black;
+        "
+      ></div>
+    </div>
+    <!-- Tercera parte, cambio color div -->
+    <div
+      class="box-container"
+      style="background-color: gainsboro; padding: 1rem"
+    >
+      <h2 style="display: flex; align-items: center" id="message">
+        Al presionar q, w, e, se agregará un cuadrado:
+      </h2>
+      <div class="addedBoxes"></div>
+    </div>
+
+    <script src="./assets/js/4_colores.js"></script>
+  </body>
+</html>
